@@ -1,0 +1,257 @@
+/*Navbar*/
+#wrapper {
+    background-image: linear-gradient(to top, #c3c7cd, #d2d5d9, #e2e2e6, #f0f1f2, #ffffff);
+}
+
+.navbar-default {
+    background-color: transparent!important;
+}
+
+a{
+    color: #656565;
+}
+
+/*Main page*/
+#mainpage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    margin: auto;
+}
+
+#boxMainPage {
+    margin: auto;
+    padding: 2%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0.2px 0.7px;
+}
+
+@media (max-width: 768px){
+    
+    #boxMainPage {
+        margin-left: 2%!important;
+        margin-right: 2%!important;
+        padding: 5%;
+    }
+}
+
+input.form-control, input.form-control:focus {
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+label.form-control-placeholder {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 85%;
+    color: #938F8F;
+}
+
+button.btn-default-center {
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 30px;
+    margin-top: 3%;
+    border-color: #938F8F;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline:none!important;
+}
+
+
+/*Loader div*/
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #4E4A4A; /* Dark grey */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*Input placeholder*/
+.divInputData {
+    margin-top: 2%;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+.txtmsgerror{
+    color: red;
+    font-style: italic;
+}
+
+.containerPage{
+    padding-top: 2%;
+}
+
+.arrowDropRigth{
+    float: right;
+    margin-top: 1%;
+}
+
+/*Datatables*/
+.dataTables_length, .dataTables_info, 
+.dataTables_paginate > .paginate_button.previous, 
+.dataTables_paginate > .paginate_button.next {
+    display: none!important;
+}
+
+.dataTables_paginate > span > .paginate_button.current {
+    border-radius: 20px!important;
+    background: transparent!important;
+    padding: 1%!important;
+}
+
+td.details-control {
+    background: url('/application/resources/images/view-icon.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('/application/resources/images/hide-icon.png') no-repeat center center;
+}
+
+.table-code-product{
+    width: 20%!important;
+}
+
+.table-name-product{
+    width: 75%!important;
+}
+
+
+.paginate_button:hover, .paginate_button:hover {
+    color: black!important;
+    border-radius: 20px!important;
+    background-color: transparent!important;
+    background: white!important;
+    box-shadow: none!important; 
+}
+
+.dataTables_filter > label > input{
+    box-shadow: none;
+    border-radius: 30px;
+    border: 1px solid #938F8F;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.iconActionClient {
+    margin-right: 5%;
+}
+
+table.dataTable tbody td {
+    word-break: break-word;
+    vertical-align: top;
+}
+
+/*Modal*/
+.modal {
+    background-color: rgba(219, 215, 215,0.6);
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    margin: auto;
+}
+
+.iconModal {
+    font-size: x-large;
+    margin-right: 5%;
+}
+
+.msgModal {
+    font-size: 16px;
+}
+
+#deleteModal {
+    display: none;
+}
+
+
+/*Button*/
+.btnModal {
+    border-radius: 30px;
+    margin-left: 5%!important;
+}
+
+.btn-danger {
+    background-color: rgba(255, 0, 0,0.2)!important;
+    border-color: red!important;
+}
+
+.btn-default {
+    background-color: rgb(245, 245, 245)!important;
+}
+
+/*Other*/
+.divTableRelCP{
+    margin-bottom: 5%;
+}
+
+.arrowChangeTable{
+    font-size: x-large;
+}
+
+.divArrowUpDown{
+    display: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.divArrowLeftRight{
+    margin-top: 20%;
+}
+
+@media (max-width: 991px){
+    .divArrowUpDown{
+        display: block;
+    }
+    
+    .divArrowLeftRight{
+        display: none;
+    }
+}
+
+.linkCenter{
+    margin-top: 4%;
+    font-style: italic;
+    display: block;
+    text-align: center;
+}
+
